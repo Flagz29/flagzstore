@@ -1,0 +1,100 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:mediumaquamarine;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: mediumaquamarine;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(241, 205, 190);  
+  outline: none;  
+}
+
+
+div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+    <body>  
+    <form>  
+      <div class="container">  
+      <center>  <h1> FORM REGISTRASI</h1> </center>  
+      <hr>  
+      <label> Nama Lengkap:</label>   
+    <input type="text" name="firstname" placeholder= "Nama Lengkap" size="15" required />    
+    <div>  
+    <label>      
+    Jenis Kelamin :  
+    </label><br>  
+    <input type="radio" value="Male" name="gender" checked class="kelas"> Laki-Laki   
+    <input type="radio" value="Female" name="gender"> Perempuan    
+    </div>
+    <label>
+    <label for="email"><b>Email</b></label>  
+    <input type="text" placeholder="Masukkan Email" name="email" required>  
+      
+        <label for="psw"><b>Password</b></label>  
+        <input type="password" placeholder="Masukkan Password" name="psw" required>  
+      
+        <label for="psw-repeat"><b>Masukkan ulang password</b></label>  
+        <input type="password" placeholder="Masukkan ulang password" name="psw-repeat" required>  
+        <label for="prodi"><b>Program studi: </b></label>
+    </label>   
+      
+    <select>  
+    <option value="INFORMATIKA">INFORMATIKA</option>  
+    <option value="SISTEM INFORMASI">SISTEM INFORMASI</option>  
+    <option value="TEKNIK SIPIL">TEKNIK SIPIL</option>  
+    <option value="ILMU KOMPUTER">ILMU KOMPUTER</option>  
+    </select>  
+    </div>  
+    <div>  
+    <label>     
+        HOBI :  
+    </label><br>  
+    <input type="radio" value="BADMINTON" name="Hobi" checked > BADMINTON 
+    <input type="radio" value="RENANG" name="Hobi"> RENANG 
+    <input type="radio" value="SEPAK BOLA" name="Hobi" checked > SEPAK BOLA
+    <input type="radio" value="GAME" name="Hobi" checked > GAME
+    </div>  
+    <label>  
+        Alamat :  
+    <textarea cols="80" rows="5" placeholder="Alamat anda" value="address" required>  
+    </textarea>  
+    <button type="submit" class="registerbtn">Register</button>
+    </form>  
+</body>  
+</html>  
